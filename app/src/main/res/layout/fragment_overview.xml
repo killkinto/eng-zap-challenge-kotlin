@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.killkinto.zapplus.overview.OverviewViewModel" />
+        <import type="com.killkinto.zapplus.overview.PropertyStatus"/>
+        <import type="android.view.View"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".overview.OverviewFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/property_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            app:listData="@{viewmodel.properties}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/card_property_item" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/loading_img"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:statusImage="@{viewmodel.status}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="invisible"
+            tools:srcCompat="@drawable/loading_img"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/no_connected_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:empty_list="@{viewmodel.status}"
+            app:layout_constraintEnd_toEndOf="@+id/loading_img"
+            app:layout_constraintStart_toStartOf="@+id/loading_img"
+            app:layout_constraintTop_toBottomOf="@id/loading_img"
+            tools:visibility="invisible"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Zap+</string>
+    <string name="select_portal">Escolha um portal para começar:</string>
+    <string name="portal_title">Portal %s</string>
+    <string name="portal_zap">zap</string>
+    <string name="portal_viva_real">VivaReal</string>
+    <string name="property_title">Imóvel para %s</string>
+    <string name="uninformed">não informado</string>
+    <string name="business_type_sale">vender</string>
+    <string name="business_type_rental">alugar</string>
+    <string name="condominium_value">Condomínio %s</string>
+    <string name="iptu_value">IPTU %s</string>
+    <string name="property_address">%1$s, %2$s</string>
+    <string name="area">%d m&#178;</string>
+    <string name="dot">&#176;</string>
+    <string name="propery_detail_title">Detalhes do imóvel</string>
+    <string name="for_sale_detail_title">Para vender</string>
+    <string name="for_rental_detail_title">Para alugar</string>
+    <string name="portais">Portais</string>
+    <string name="property_result">Carregando os imóveis</string>
+    <string name="not_connected">Sem conexão com a internet</string>
+    <string name="property_empy_list">Nenhum imóvel encontrado</string>
+    <string name="hello">Olá!</string>
+    <plurals name="bedrooms">
+        <item quantity="one">1 quarto</item>
+        <item quantity="other">%d quartos</item>
+    </plurals>
+    <plurals name="bathrooms">
+        <item quantity="one">1 banheiro</item>
+        <item quantity="other">%d banheiros</item>
+    </plurals>
+    <plurals name="parking_spaces">
+        <item quantity="one">1 vaga</item>
+        <item quantity="other">%d vagas</item>
+    </plurals>
+</resources>
