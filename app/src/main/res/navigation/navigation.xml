@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_portais">
         <action
             android:id="@+id/action_portaisFragment_to_overviewFragment"
-            app:destination="@id/overviewFragment"/>
+            app:destination="@id/overviewFragment"
+            app:enterAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/overviewFragment"
@@ -21,7 +22,9 @@
         tools:layout="@layout/fragment_overview" >
         <action
             android:id="@+id/action_overviewFragment_to_propertyDetailFragment"
-            app:destination="@id/propertyDetailFragment"/>
+            app:destination="@id/propertyDetailFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
         <argument
             android:name="portal_selected"
             app:argType="string"

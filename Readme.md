@@ -4,8 +4,8 @@ Favor abrir o projeto no Android Studio(ou em outro IDE de preferência) e execu
 
 # Para rodar os testes
 
-## Teste instrumental
+## Testes instrumentais
 No Android Studio, selecione o arquivo MainActivityTest e aperte Ctrl+Shift+F10
 
-## Teste unitário
-No Android Studio, selecione o arquivo PropertyTest e aperte Ctrl+Shift+F10
+## Testes unitários
+No Android Studio, selecione o arquivo PropertyTest e aperte Ctrl+Shift+F10 para testar as regras de negócio

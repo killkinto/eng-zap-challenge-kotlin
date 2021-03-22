@@ -14,8 +14,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_normal"
-        android:padding="@dimen/margin_normal"
+        android:layout_margin="@dimen/margin_extra"
         card_view:cardCornerRadius="@dimen/card_corner_radius">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -65,13 +64,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_extra"
+                android:layout_marginStart="@dimen/margin_normal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/price_text">
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/condominium_value_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_normal"
                     android:layout_marginTop="@dimen/margin_normal"
                     app:condominium_value="@{property.infos.condominium}"
                     tools:text="Condomínio R$ 260,00" />
