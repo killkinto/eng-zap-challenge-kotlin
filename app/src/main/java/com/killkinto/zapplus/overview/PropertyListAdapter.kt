@@ -42,10 +42,11 @@ class PropertyListAdapter(private val onClickListener: OnClickListener) :
     }
 
     companion object DiffCallback : DiffUtil.ItemCallback<Property>() {
-        override fun areItemsTheSame(oldItem: Property, newItem: Property) = oldItem == newItem
+        override fun areItemsTheSame(oldItem: Property, newItem: Property) =
+            oldItem.id == newItem.id
 
         override fun areContentsTheSame(oldItem: Property, newItem: Property) =
-            oldItem.id == newItem.id
+            oldItem == newItem
 
     }
 }

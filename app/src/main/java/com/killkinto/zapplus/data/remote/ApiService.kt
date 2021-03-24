@@ -23,5 +23,5 @@ class PropertyApi(private val retrofit: Retrofit) {
 interface GrupoZapService {
     @GET("source-1.json")
     //@GET("source-sample.json")
-    suspend fun getProperties() : List<NetworkPropery>
+    suspend fun getProperties() : List<NetworkProperty>
 }

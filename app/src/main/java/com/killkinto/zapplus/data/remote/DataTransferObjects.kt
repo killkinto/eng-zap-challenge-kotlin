@@ -3,7 +3,7 @@ package com.killkinto.zapplus.data.remote
 import com.killkinto.zapplus.data.model.*
 import com.squareup.moshi.Json
 
-data class NetworkPropery(
+data class NetworkProperty(
     val id: String,
     val images: List<String>,
     val address: AddressNetwork?,
@@ -34,7 +34,7 @@ data class GeoLocationNetwork(val location: LocationNetwork?)
 
 data class LocationNetwork(val lon: Double?, val lat: Double?)
 
-fun NetworkPropery.asModel(): Property {
+fun NetworkProperty.asModel(): Property {
     val businessType = when (this.pricingInfos.businessType) {
         "SALE" -> BusinessType.SALE
         "RENTAL" -> BusinessType.RENTAL

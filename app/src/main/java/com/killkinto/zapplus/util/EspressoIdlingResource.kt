@@ -3,7 +3,7 @@ package com.killkinto.zapplus.util
 import androidx.test.espresso.idling.CountingIdlingResource
 
 /**
- * Classe auxiliar para informar o Espresso Test quando uma coroutines inicio e terminou a execução
+ * Classe auxiliar para informar o Espresso Test quando uma coroutines iniciou e terminou a execução
  * da função
  */
 object EspressoIdlingResource {

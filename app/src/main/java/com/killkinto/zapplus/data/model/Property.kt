@@ -31,10 +31,7 @@ data class Property(
     }
 
     private fun calculateSquareMeterValue() =
-        if (infos.businessType == BusinessType.SALE
-        ) {
-            infos.price / composition.area
-        } else 0.0
+        if (infos.businessType == BusinessType.SALE) infos.price / composition.area else 0.0
 
     /**
      * Verifica se o imóvel está dentro do bounding box dos arredores do Grupo ZAP
